@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<script>
+    musterkarten = {
+    2: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20291031",
+        "GivenNames": "ANDRÈ",
+        "FamilyNames": "MUSTERMANN",
+        "NomDePlume": "",
+        "AcademicTitle": "",
+        "DateOfBirth": "19810617",
+        "PlaceOfBirth": "FRANKFURT (ODER)",
+        "Nationality": "",
+        "Sex": "M",
+        "BirthName": "",
+        "DateOfIssuance": "20191101",
+        "Street": "EHM-WELK-STRAẞE 33",
+        "City": "LÜBBENAU/SPREEWALD",
+        "Country": "D",
+        "Zipcode": "03222"
+    }, 3: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20291031",
+        "GivenNames": "JOHANNA EDELTRAUD LISBETH",
+        "FamilyNames": "MUSTERMANN",
+        "NomDePlume": "ORDENSSCHWESTER JOHANNA",
+        "AcademicTitle": "DR.",
+        "DateOfBirth": "19280421",
+        "PlaceOfBirth": "MÜNCHEN",
+        "Nationality": "D",
+        "Sex": "M",
+        "BirthName": "VON MÜLLER-SCHWARZENBERG",
+        "DateOfIssuance": "20191101",
+        "Street": "BOUCHÉSTR. 68A",
+        "City": "BERLIN",
+        "Country": "D",
+        "Zipcode": "12059"
+    },
+
+    4: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20291031",
+        "GivenNames": "---",
+        "FamilyNames": "ĆOSIĆ",
+        "NomDePlume": "",
+        "AcademicTitle": "",
+        "DateOfBirth": "199409XX",
+        "PlaceOfBirth": "PRIŠTINA",
+        "Nationality": "D",
+        "Sex": "M",
+        "BirthName": "",
+        "DateOfIssuance": "20191101",
+        "Street": "F4 14-15",
+        "City": "MANNHEIM",
+        "Country": "D",
+        "Zipcode": "68159"
+    },
+
+    5: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20291031",
+        "GivenNames": "AĞÇA",
+        "FamilyNames": "ÖZM̂EN",
+        "NomDePlume": "",
+        "AcademicTitle": "",
+        "DateOfBirth": "1989XXXX",
+        "PlaceOfBirth": "DESSAU-ROẞLAU",
+        "Nationality": "D",
+        "Sex": "F",
+        "BirthName": "",
+        "DateOfIssuance": "20191101",
+        "Street": "GROẞENHAINER STR. 133/135",
+        "City": "DRESDEN",
+        "Country": "D",
+        "Zipcode": "01229"
+    },
+
+    7: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20291031",
+        "GivenNames": "ANNEKATHRIN",
+        "FamilyNames": "LERCH",
+        "NomDePlume": "",
+        "AcademicTitle": "",
+        "DateOfBirth": "19760705",
+        "PlaceOfBirth": "BAD KÖNIGSHOFEN I. GRABFELD",
+        "Nationality": "D",
+        "Sex": "F",
+        "BirthName": "BJØRNSON",
+        "DateOfIssuance": "20191101",
+        "Street": "",
+        "City": "HALLE (SAALE)",
+        "Country": "D",
+        "Zipcode": "06108"
+    },
+
+    8: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20291031",
+        "GivenNames": "KARL",
+        "FamilyNames": "HILLEBRANDT",
+        "NomDePlume": "GRAF V. LÝSKY",
+        "AcademicTitle": "DR.HC.",
+        "DateOfBirth": "19520617",
+        "PlaceOfBirth": "TRIER",
+        "Nationality": "D",
+        "Sex": "F",
+        "BirthName": "missing",
+        "DateOfIssuance": "20191101",
+        "Street": "",
+        "City": "",
+        "Country": "",
+        "Zipcode": ""
+    },
+
+    9: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20251031",
+        "GivenNames": "LILLY",
+        "FamilyNames": "SCHUSTER",
+        "NomDePlume": "",
+        "AcademicTitle": "DR.HC.",
+        "DateOfBirth": "20100330",
+        "PlaceOfBirth": "MÜHLHAUSEN/THÜRINGEN",
+        "Nationality": "D",
+        "Sex": "F",
+        "BirthName": "",
+        "DateOfIssuance": "20191101",
+        "Street": "MARIENSTRAẞE 144",
+        "City": "EISENACH",
+        "Country": "D",
+        "Zipcode": "99817"
+    },
+
+    10: {
+        "TypeOfDocument": "ID",
+        "IssuingState": "D",
+        "DateOfExpiry": "20291031",
+        "GivenNames": "GHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGH",
+        "FamilyNames": "CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD",
+        "NomDePlume": "STSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTSTST",
+        "AcademicTitle": "ABABABABABABABABABABABABABABABABABABABAB",
+        "DateOfBirth": "18990502",
+        "PlaceOfBirth": "IJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJIJ",
+        "Nationality": "D",
+        "Sex": "M",
+        "BirthName": "EFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFE",
+        "DateOfIssuance": "20191101",
+        "Street": "OPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOPOP",
+        "City": "MNMNMNMNMNMNMNMNMNMNMNMNMNMNMNMNMNMNMNMNMNMN",
+        "Country": "D",
+        "Zipcode": "12345"
+    }
+
+}
+
+</script> 
+
+<script>
+
+    const ws = new WebSocket("ws://localhost:24727/eID-Kernel");
+    ws.addEventListener("open", (event) => {
+    });
+
+    ws.onmessage = (event) => {
+        const msg = JSON.parse(event.data)
+        switch (msg.msg) {
+            case "READER_LIST":
+                console.log("got reader list!");
+        }
+    };
+
+    // Listen for messages
+    ws.addEventListener("message", (event) => {
+        console.log("Message from server ", event.data);
+    });
+
+    //ws.close();
+
+</script>
+
+<script>
+    function auth() {
+        ws.send(`{
+                "cmd": "RUN_AUTH",
+                "tcTokenURL": "` +
+                document.getElementById('tcTokenURL').value + '",' +
+                `"developerMode": true,
+                "handleInterrupt": false,
+                "status": true
+                }`);
+    }
+
+    function msg_accept() {
+        ws.send('{"cmd": "ACCEPT"}');
+    }
+
+    function set_card() {
+        TypeOfDocument = toHex(document.getElementById('TypeOfDocument').value)
+        IssuingState = toHex(document.getElementById('IssuingState').value)
+        DateOfExpiry = toHex(document.getElementById('DateOfExpiry').value)
+        GivenNames = toHex(document.getElementById('GivenNames').value)
+        FamilyNames = toHex(document.getElementById('FamilyNames').value)
+        NomDePlume = toHex(document.getElementById('NomDePlume').value)
+        AcademicTitle = toHex(document.getElementById('AcademicTitle').value)
+        DateOfBirth = toHex(document.getElementById('DateOfBirth').value)
+        PlaceOfBirth = toHex(document.getElementById('PlaceOfBirth').value)
+        Nationality = toHex(document.getElementById('Nationality').value)
+        Sex = toHex(document.getElementById('Sex').value)
+        BirthName = toHex(document.getElementById('BirthName').value)
+        DateOfIssuance = toHex(document.getElementById('DateOfIssuance').value)
+        Street = toHex(document.getElementById('Street').value)
+        City = toHex(document.getElementById('City').value)
+        Country = toHex(document.getElementById('Country').value)
+        Zipcode = toHex(document.getElementById('Zipcode').value)
+
+        ws.send(`{"cmd": "SET_CARD", "name": "Simulator",
+                    "simulator":
+                    {
+                    "files":
+                    [
+                        {"fileId": "0101", "shortFileId": "01", "content": "${tlv("61",tlv("13",TypeOfDocument))}"},  
+                        {"fileId": "0102", "shortFileId": "02", "content": "${tlv("62",tlv("13",IssuingState))}"},
+                        {"fileId": "0103", "shortFileId": "03", "content": "${tlv("63",tlv("12",DateOfExpiry))}"},
+                        {"fileId": "0104", "shortFileId": "04", "content": "${tlv("64",tlv("0c",GivenNames))}"},
+                        {"fileId": "0105", "shortFileId": "05", "content": "${tlv("65",tlv("0c",FamilyNames))}"},
+                        {"fileId": "0106", "shortFileId": "06", "content": "${tlv("66",tlv("0c",NomDePlume))}"},
+                        {"fileId": "0107", "shortFileId": "07", "content": "${tlv("67",tlv("0c",AcademicTitle))}"},
+                        {"fileId": "0108", "shortFileId": "08", "content": "${tlv("68",tlv("12",DateOfBirth))}"},
+                        {"fileId": "0109", "shortFileId": "09", "content": "${tlv("69",tlv("a1",tlv("0c",PlaceOfBirth)))}"},
+                        {"fileId": "010a", "shortFileId": "0a", "content": "${tlv("6a",tlv("13",Nationality))}"},
+                        {"fileId": "010b", "shortFileId": "0b", "content": "${tlv("6b",tlv("13",Sex))}"},
+                        {"fileId": "010c", "shortFileId": "0c", "content": "6c30312e302c06072a8648ce3d0101022100a9fb57dba1eea9bc3e660a909d838d726e3bf623d52620282013481d1f6e5377"},
+                        {"fileId": "010d", "shortFileId": "0d", "content": "${tlv("6d", tlv("0c",BirthName))}"},
+                        {"fileId": "010f", "shortFileId": "0f", "content": "${tlv("6f",tlv("12",DateOfIssuance))}"},
+                        {"fileId": "0111", "shortFileId": "11", "content": "${tlv("71",tlv("30",tlv("aa",tlv("0c",Street))+tlv("ab",tlv("0c",City))+tlv("ad",tlv("13",Country))+tlv("ae",tlv("13",Zipcode))))}"},
+                        {"fileId": "0112", "shortFileId": "12", "content": "7209040702760503150000"},
+                        {"fileId": "0113", "shortFileId": "13", "content": "7316a1140c125245534944454e4345205045524d49542031"},
+                        {"fileId": "0114", "shortFileId": "14", "content": "7416a1140c125245534944454e4345205045524d49542032"},
+                        {"fileId": "0115", "shortFileId": "15", "content": "7515131374656c3a2b34392d3033302d31323334353637"},
+                        {"fileId": "0116", "shortFileId": "16", "content": "761516136572696b61406d75737465726d616e6e2e6465"}
+                    ],
+                    "keys":
+                    [
+                        {"id": 1, "private": "0353859c2ec67780ba39015de8c682af2326d43de9ce1e07737087bd1e17cb22"},
+                        {"id": 2, "private": "9ad0ad7f4dfaaa06988339fc31d3a111f4c7964ac7f377373a2454327c43e2ff"}
+                    ]
+                    }}`);
+    }
+
+    function getLength(s) {
+        return (s.length/2).toString(16).padStart(2, '0')
+    }
+
+    function toHex(s) {
+        // utf8 to latin1
+        var s = unescape(encodeURIComponent(s))
+        var h = ''
+        for (var i = 0; i < s.length; i++) {
+            h += s.charCodeAt(i).toString(16)
+        }
+        return h
+    }
+
+    function tlv(t, v) {
+        l = getLength(v)
+        return `${t}${l}${v}`
+    }
+
+    function set_pin() {
+        ws.send(`{"cmd": "SET_PIN"}`);
+    }
+
+    function close() {
+        ws.close();
+    }
+
+    function load_mk(n) {
+        document.getElementById('TypeOfDocument').value = musterkarten[n].TypeOfDocument
+        document.getElementById('IssuingState'  ).value = musterkarten[n].IssuingState
+        document.getElementById('DateOfExpiry'  ).value = musterkarten[n].DateOfExpiry
+        document.getElementById('GivenNames'    ).value = musterkarten[n].GivenNames
+        document.getElementById('FamilyNames'   ).value = musterkarten[n].FamilyNames
+        document.getElementById('NomDePlume'    ).value = musterkarten[n].NomDePlume
+        document.getElementById('AcademicTitle' ).value = musterkarten[n].AcademicTitle
+        document.getElementById('DateOfBirth'   ).value = musterkarten[n].DateOfBirth
+        document.getElementById('PlaceOfBirth'  ).value = musterkarten[n].PlaceOfBirth
+        document.getElementById('Nationality'   ).value = musterkarten[n].Nationality
+        document.getElementById('Sex'           ).value = musterkarten[n].Sex
+        document.getElementById('BirthName'     ).value = musterkarten[n].BirthName
+        document.getElementById('DateOfIssuance').value = musterkarten[n].DateOfIssuance
+        document.getElementById('Street'        ).value = musterkarten[n].Street
+        document.getElementById('City'          ).value = musterkarten[n].City
+        document.getElementById('Country'       ).value = musterkarten[n].Country
+        document.getElementById('Zipcode'       ).value = musterkarten[n].Zipcode
+    }
+
+    
+</script>
+
+<!-- <input id="getTcToken" type="button" value="getTcToken" onclick="getTcToken();" /> -->
+
+<div>
+    <input type="button" value="Lade Musterkarte 02" onclick="load_mk(2)">
+    <input type="button" value="Lade Musterkarte 03" onclick="load_mk(3)">
+    <input type="button" value="Lade Musterkarte 04" onclick="load_mk(4)">
+    <input type="button" value="Lade Musterkarte 05" onclick="load_mk(5)">
+    <input type="button" value="Lade Musterkarte 07" onclick="load_mk(7)">
+    <input type="button" value="Lade Musterkarte 08" onclick="load_mk(8)">
+    <input type="button" value="Lade Musterkarte 09" onclick="load_mk(9)">
+    <input type="button" value="Lade Musterkarte 10" onclick="load_mk(10)">
+</div>
+
+
+
+
+
+<br>
+
+<div>
+    <label for="tcTokenURL">tcTokenURL:</label>
+    <input name="tcTokenURL" type="text" id="tcTokenURL"/><br>
+    
+    <input id="auth" type="button" value="0. AUTH" onclick="auth();" />
+    <input id="accept" type="button" value="1. ACCEPT" onclick="msg_accept();" />
+    <input id="set_card" type="button" value="2. SET_CARD" onclick="set_card();" />
+    <input id="set_pin" type="button" value="3. SET_PIN" onclick="set_pin();" />
+    <input id="close" type="button" value="4. CLOSE" onclick="close();" />
+</div>
+
+
+<div>
+    <label for="TypeOfDocument">TypeOfDocument:</label>
+    <input name="TypeOfDocument" type="text" id="TypeOfDocument" value="ID"/><br>
+    <label for="IssuingState">IssuingState:</label>
+    <input name="IssuingState" type="text" id="IssuingState" value="D"/><br>
+    <label for="Sex">Sex:</label>
+    <input name="Sex" type="text" id="Sex" value="F"/><br>
+</div>
+
+
+<div id="front" class="front">
+    <img class="pa-front" src="pa-front.png">
+    <!-- <label for="DateOfExpiry">DateOfExpiry:</label> -->
+    <input class="date-of-expiry" name="DateOfExpiry" type="text" id="DateOfExpiry" value="20291130"/>
+    <!-- <label for="GivenNames">GivenNames:</label> -->
+    <input class="given-names" name="GivenNames" type="text" id="GivenNames" value="ERIKA"/>
+    <!-- <label for="AcademicTitle">AcademicTitle:</label> -->
+    <input class="academic-title" name="AcademicTitle" type="text" id="AcademicTitle" value=""/>
+    <!-- <label for="FamilyNames">FamilyNames:</label> -->
+    <input class="family-names" name="FamilyNames" type="text" id="FamilyNames" value="MUSTERMANN"/>
+    <!-- <label for="BirthName">BirthName:</label> -->
+    <input class="birth-name" name="BirthName" type="text" id="BirthName" value="GABLER"/>
+    <!-- <label for="DateOfBirth">DateOfBirth:</label> -->
+    <input class="date-of-birth" name="DateOfBirth" type="text" id="DateOfBirth" value="19640812"/>
+    <!-- <label for="PlaceOfBirth">PlaceOfBirth:</label> -->
+    <input class="place-of-birth" name="PlaceOfBirth" type="text" id="PlaceOfBirth" value="BERLIN"/>
+    <!-- <label for="Nationality">Nationality:</label> -->
+    <input class="nationality" name="Nationality" type="text" id="Nationality" value="D"/>
+</div>
+
+<div id="back" class="back">
+    <img src="pa-back.png">
+    <!-- <label for="NomDePlume">NomDePlume:</label> -->
+    <input class="nom-de-plume" name="NomDePlume" type="text" id="NomDePlume" value=""/>
+    <!-- <label for="Street">Street:</label> -->
+    <input class="street" name="Street" type="text" id="Street" value="HEIDESTRAẞE 17"/>
+    <!-- <label for="Zipcode">Zipcode:</label> -->
+    <input class="zipcode" name="Zipcode" type="text" id="Zipcode" value="51147"/>
+    <!-- <label for="City">City:</label> -->
+    <input class="city" name="City" type="text" id="City" value="KÖLN"/>
+    <!-- <label for="Country">Country:</label> -->
+    <input class="country" name="Country" type="text" id="Country" value="D"/>
+    <!-- <label for="DateOfIssuance">DateOfIssuance:</label> -->
+    <input class="date-of-issuance" name="DateOfIssuance" type="text" id="DateOfIssuance" value="20191201"/>
+</div>
+
+</html>
